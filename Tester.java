@@ -18,5 +18,7 @@ public class Tester{
     System.out.println(testTriangle.getArea()); //Should return 12.5
     System.out.println();
     System.out.println(testTriangle.classify()); //Should return Isosceles
+    System.out.println();
+    System.out.println(testTriangle.toString()); //should return v1(0.0, 0.0) v2(0.0, 5.0) v3(5.0, 5.0)
   }
 }

@@ -27,4 +27,7 @@ public class Triangle{
     }
     return "Scalene";
   }
+  public String toString(){
+    return "v1" + v1.toString() + " v2" + v2.toString() + " v3" + v3.toString();
+  }
 }
