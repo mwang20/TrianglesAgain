@@ -14,5 +14,7 @@ public class Tester{
     System.out.println(testPoint.equals(testPoint)); //Should return true
     System.out.println();
     System.out.println(testTriangle.getPerimeter()); //Should return approxiamately 17
+    System.out.println();
+    System.out.println(testTriangle.getArea()); //Should return 12.5
   }
 }

@@ -1,3 +1,4 @@
+import java.lang.Math;
 public class Triangle{
   private Point v1, v2, v3;
   public Triangle(Point a, Point b, Point c){
@@ -12,5 +13,9 @@ public class Triangle{
   }
   public double getPerimeter(){
     return v1.distanceTo(v2) + v2.distanceTo(v3) + v1.distanceTo(v3);
+  }
+  public double getArea(){
+    double s = getPerimeter()/2;
+    return Math.sqrt(s * (s - v1.distanceTo(v2)) * (s - v2.distanceTo(v3)) * (s - v1.distanceTo(v3)));
   }
 }
