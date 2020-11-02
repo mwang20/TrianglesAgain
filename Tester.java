@@ -20,5 +20,13 @@ public class Tester{
     System.out.println(testTriangle.classify()); //Should return Isosceles
     System.out.println();
     System.out.println(testTriangle.toString()); //should return v1(0.0, 0.0) v2(0.0, 5.0) v3(5.0, 5.0)
+    System.out.println();
+    testTriangle.setVertex(0, testPoint); //Should replace v1 with testPoint
+    System.out.println();
+    System.out.println(testTriangle.toString()); //Should return v1(1.0, 2.0) v2(0.0, 5.0) v3(5.0, 5.0)
+    System.out.println();
+    testTriangle.setVertex(1, other); //Should replace v2 with other
+    System.out.println();
+    System.out.println(testTriangle.toString()); //Should return v1(1.0, 2.0) v2(1.0, 6.0) v3(5.0, 5.0)
   }
 }
