@@ -18,4 +18,13 @@ public class Triangle{
     double s = getPerimeter()/2;
     return Math.sqrt(s * (s - v1.distanceTo(v2)) * (s - v2.distanceTo(v3)) * (s - v1.distanceTo(v3)));
   }
+  public String classify(){
+    if (v1.distanceTo(v2) == v2.distanceTo(v3) && v1.distanceTo(v2) == v1.distanceTo(v3)){
+      return "Equilateral";
+    }
+    else if (v1.distanceTo(v2) == v2.distanceTo(v3) || v1.distanceTo(v2) == v1.distanceTo(v3)){
+      return "Isosceles";
+    }
+    return "Scalene";
+  }
 }

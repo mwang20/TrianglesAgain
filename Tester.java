@@ -16,5 +16,7 @@ public class Tester{
     System.out.println(testTriangle.getPerimeter()); //Should return approxiamately 17
     System.out.println();
     System.out.println(testTriangle.getArea()); //Should return 12.5
+    System.out.println();
+    System.out.println(testTriangle.classify()); //Should return Isosceles
   }
 }
