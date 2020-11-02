@@ -7,5 +7,9 @@ public class Tester{
     System.out.println(testPoint.getY()); //Should return 2
     System.out.println();
     System.out.println(testPoint.distanceTo(other)); //Should return 4
+    System.out.println();
+    System.out.println(testPoint.equals(other)); //Should return false
+    System.out.println();
+    System.out.println(testPoint.equals(testPoint)); //Should return true
   }
 }
